@@ -39,7 +39,7 @@
   box-shadow: 7px 7px 15px 0px var(--hero-shadow-color);
   position: absolute;
   padding: 2rem;
-  bottom: -8rem;
+  top: 35rem;
   left: 50%;
   transform: translateX(-50%);
   align-items: center;
@@ -48,6 +48,7 @@
   flex-direction: column;
 
   @media only screen and (min-width: 70rem) {
+    bottom: -8rem;
     flex-direction: row;
   }
 }
@@ -109,7 +110,7 @@
 }
 
 .margin_bottom_rsp {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   @media only screen and (min-width: 64rem) and (orientation: landscape) {
     margin-bottom: 0;
   }
@@ -126,4 +127,9 @@
   cursor: pointer;
   text-align: center;
   display: block;
+  width: 100%;
+
+  @media only screen and (min-width: 70rem) {
+    width: max-content;
+  }
 }

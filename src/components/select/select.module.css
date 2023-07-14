@@ -11,7 +11,7 @@
   padding: 1rem;
   display: flex;
   max-width: 100%;
-  width: 100%;
+  width: calc(250rem / 16);
   cursor: pointer;
   @media only screen and (min-width: 70rem) {
     width: calc(254rem / 16);
@@ -24,9 +24,10 @@
 
 .options {
   position: absolute;
-  bottom: 1;
+  top: 3.5rem;
   left: 0;
   right: 0;
+  z-index: 1;
   background-color: white;
   box-shadow: 7px 7px 15px 0px var(--hero-shadow-color);
   font-size: calc(12rem / 16);
