@@ -1,0 +1,43 @@
+.select_container {
+  position: relative;
+}
+
+.select {
+  border: 2px solid var(--slate-gray-pg-color);
+  align-items: center;
+  font-size: calc(12rem / 16);
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  padding: 1rem;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  @media only screen and (min-width: 70rem) {
+    width: calc(254rem / 16);
+  }
+}
+
+.select > :first-child {
+  margin-right: auto;
+}
+
+.options {
+  position: absolute;
+  bottom: 1;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 7px 7px 15px 0px var(--hero-shadow-color);
+  font-size: calc(12rem / 16);
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.options > * {
+  cursor: pointer;
+}
+
+.options > *:not(:last-child) {
+  margin-bottom: 1rem;
+}

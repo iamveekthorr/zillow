@@ -1,0 +1,76 @@
+.services_grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  padding: 1rem;
+  @media only screen and (min-width: 70rem) {
+    grid-template-columns: repeat(auto-fit, minmax(calc(400rem / 16), 1fr));
+  }
+}
+
+.services_grid__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.services_grid__item > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.card_btn {
+  background-color: white;
+  color: var(--color-primary);
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  border: none;
+  font-family: inherit;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  width: fit-content;
+}
+
+.services_grid__item:nth-child(2) {
+  background-color: var(--color-primary);
+}
+
+.services_grid__item:nth-child(3) {
+  background-color: var(--card-2-bg);
+}
+
+.services_grid__item:nth-child(2) > p {
+  color: white;
+}
+
+.services_grid__item:nth-child(3) > p {
+  color: white;
+}
+
+.services_grid__item:nth-child(4) {
+  background-color: var(--color-primary);
+}
+
+.services_grid__item:nth-child(4) > p {
+  color: white;
+}
+
+.services_grid__item:nth-child(3) > button {
+  color: var(--card-2-bg);
+}
+
+.service_grid__item_card_heading {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.service_grid__item_card_sub_heading {
+  color: var(--slate-gray-pg-color);
+  text-transform: capitalize;
+  font-size: calc(12rem / 16);
+}

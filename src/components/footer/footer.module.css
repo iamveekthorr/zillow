@@ -1,0 +1,9 @@
+.footer_container {
+  padding: 1rem;
+  color: var(--slate-gray-pg-color);
+  text-transform: capitalize;
+}
+
+.footer_container__text_group > *:not(:last-child) {
+  margin-bottom: 1rem;
+}

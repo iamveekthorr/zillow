@@ -1,0 +1,129 @@
+.display_flex_util {
+  display: flex;
+}
+
+.align_items_center_util {
+  align-items: center;
+}
+
+.justify_content_center_util {
+  justify-content: center;
+}
+
+.margin_right_auto_util {
+  margin-right: auto;
+}
+
+.padding_gen_sm_1 {
+  padding: 1rem;
+}
+
+.padding_right_sm_1 {
+  padding-right: 0rem;
+  @media only screen and (orientation: landscape) and (min-width: 64rem) {
+    padding-right: 1rem;
+  }
+}
+
+.clear_margin {
+  margin: 0 !important;
+}
+
+.hero_section {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.hero_section__searchBG {
+  background: #fff;
+  box-shadow: 7px 7px 15px 0px var(--hero-shadow-color);
+  position: absolute;
+  padding: 2rem;
+  bottom: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+
+  @media only screen and (min-width: 70rem) {
+    flex-direction: row;
+  }
+}
+
+.hero_section__searchBG > *:not(:last-child) {
+  margin-bottom: 1rem;
+  margin-right: 0;
+
+  @media only screen and (min-width: 70rem) {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
+
+.hero_text_container {
+  color: var(--secondary-color);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+
+  @media only screen and (min-width: 70rem) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (orientation: landscape) and (min-width: 64rem) {
+    text-align: left;
+  }
+}
+
+.hero_text_container > p > span:first-child {
+  margin-right: 0.5rem;
+}
+
+.hero_text__sub_heading_container {
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (min-width: 70rem) {
+    align-items: flex-start;
+  }
+}
+.hero_text__sub_heading {
+  color: var(--hero-sub-text-color);
+  text-transform: capitalize;
+  text-align: center;
+  @media only screen and (min-width: 70rem) {
+    font-size: calc(16rem / 16);
+    width: calc(50% - 10px);
+    text-align: left;
+  }
+}
+
+.display_block_sm_screen {
+  display: block;
+
+  @media only screen and (orientation: landscape) and (min-width: 64rem) {
+    display: flex;
+  }
+}
+
+.margin_bottom_rsp {
+  margin-bottom: 1rem;
+  @media only screen and (min-width: 64rem) and (orientation: landscape) {
+    margin-bottom: 0;
+  }
+}
+
+.hero_cta_button {
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  background-color: var(--color-primary);
+  border: none;
+  font-family: inherit;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+}
