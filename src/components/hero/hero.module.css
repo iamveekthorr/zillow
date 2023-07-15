@@ -39,16 +39,17 @@
   box-shadow: 7px 7px 15px 0px var(--hero-shadow-color);
   position: absolute;
   padding: 2rem;
-  top: 35rem;
   left: 50%;
+  top: 35rem;
   transform: translateX(-50%);
   align-items: center;
   display: flex;
   z-index: 2;
   flex-direction: column;
+  height: max-content;
 
   @media only screen and (min-width: 70rem) {
-    bottom: -8rem;
+    top: 30rem;
     flex-direction: row;
   }
 }
